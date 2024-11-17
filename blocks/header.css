@@ -1,0 +1,24 @@
+.header {
+}
+
+.header__contain {
+  display: flex;
+  justify-content: end;
+  justify-content: space-between;
+}
+
+.logoImg {
+  width: 120px;
+  height: 60px;
+}
+
+.nav {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+}
+
+.nav__lista {
+  margin-right: 40px;
+  text-decoration: none;
+}

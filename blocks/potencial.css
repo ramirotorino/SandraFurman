@@ -1,0 +1,109 @@
+/* Sección Unlock Your Potential */
+.unlockYourPotencial {
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.unlockYourPotencial:hover .unlock {
+  transform: scale(1.5); /* Agranda la palabra */
+  color: #10854b; /* Cambia el color */
+  transition: 0.3s;
+}
+
+.unlockYourPotencial:hover .your {
+  transform: scale(1.5); /* Agranda la palabra */
+  color: #10854b; /* Cambia el color */
+  transition: 0.5s;
+}
+
+.unlockYourPotencial:hover .potencial {
+  transform: scale(1.5); /* Agranda la palabra */
+  color: #10854b; /* Cambia el color */
+  transition: 0.8s;
+}
+
+.unlockYourPotencial:hover .live {
+  transform: scale(1.5); /* Agranda la palabra */
+  color: #10854b; /* Cambia el color */
+  transition: 1.3s;
+}
+
+.unlockYourPotencial:hover .your2 {
+  transform: scale(1.5); /* Agranda la palabra */
+  color: #10854b; /* Cambia el color */
+  transition: 1.5s;
+}
+
+.unlockYourPotencial:hover .best {
+  transform: scale(1.5); /* Agranda la palabra */
+  color: #10854b; /* Cambia el color */
+  transition: 1.8s;
+}
+
+.unlockYourPotencial:hover .life {
+  transform: scale(1.5); /* Agranda la palabra */
+  color: #10854b; /* Cambia el color */
+  transition: 2.1s;
+}
+
+.unlockYourPotencial::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../images/clases.jpeg") center/cover no-repeat;
+  opacity: 0.3; /* Transparencia para la imagen */
+  z-index: 0; /* Asegura que esté detrás del texto */
+}
+
+.potencialText {
+  position: relative; /* Asegura que el texto esté sobre el fondo */
+  z-index: 1; /* Asegura que el texto esté sobre la imagen */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 80px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+/*
+.btn-primary {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ffdf5d;
+}
+*/
