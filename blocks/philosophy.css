@@ -44,3 +44,64 @@
 .txtP {
   font-style: normal;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* Tablets */
+  .philosophy {
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    border: none;
+    transition: none; /* Eliminar transición */
+    transform: none; /* Eliminar transformación */
+  }
+
+  .philosophy:hover {
+    transform: none; /* Eliminar transformación */
+    border-radius: 0; /* Eliminar borde redondeado */
+    box-shadow: none; /* Eliminar sombra */
+    transition: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+
+  .philosophy::before {
+    display: none; /* Eliminar pseudo-elementos before */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+  }
+
+  .philosophy:hover::before {
+    border-radius: none; /* Ajusta el pseudo-elemento al 50% también */
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Smartphones */
+  .philosophy {
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    border: none;
+    transition: none; /* Eliminar transición */
+    transform: none; /* Eliminar transformación */
+  }
+
+  .philosophy:hover {
+    transform: none; /* Eliminar transformación */
+    border-radius: 0; /* Eliminar borde redondeado */
+    box-shadow: none; /* Eliminar sombra */
+    transition: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+
+  .containerTextPhilosofy {
+    margin-left: 20px;
+  }
+}

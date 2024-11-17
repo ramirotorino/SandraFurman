@@ -20,3 +20,10 @@
 .mail {
   font-size: 26px;
 }
+
+@media (max-width: 768px) {
+}
+
+/* Para smartphones (480px o menos) */
+@media (max-width: 480px) {
+}

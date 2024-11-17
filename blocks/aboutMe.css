@@ -37,23 +37,13 @@
 }
 
 .avatarSandra {
-  width: 200px; /* Tamaño del círculo */
-  height: 200px; /* Tamaño del círculo */
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  margin-left: 100px;
-  margin-top: 30px;
+  margin-left: 50px;
+  margin-top: 15px;
 }
 
 .sandraImg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
+  width: 300px;
   height: 300px;
-  transform: translate(-50%, -35%);
-  object-fit: cover;
   margin-bottom: 0;
 }
 
@@ -70,4 +60,111 @@
 
 .secondParagraph {
   font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .aboutMe {
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    border: none;
+    transition: none; /* Eliminar transición */
+    transform: none; /* Eliminar transformación */
+  }
+
+  /* Quitar pseudo-elementos before */
+  .aboutMe::before {
+    display: none; /* Eliminar pseudo-elementos before */
+  }
+
+  /* Eliminar efectos de hover */
+  .aboutMe:hover {
+    transform: none; /* Eliminar transformación */
+    border-radius: 0; /* Eliminar borde redondeado */
+    box-shadow: none; /* Eliminar sombra */
+    transition: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+
+  .avatarSandra {
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+
+  .sandraImg {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0;
+  }
+
+  .containerTextAboutMe {
+    width: 800px;
+    margin-right: auto;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+
+  .secondMainText {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .secondParagraph {
+    font-size: 20px;
+  }
+}
+
+/* Para smartphones (480px o menos) */
+@media (max-width: 480px) {
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  /* Eliminar efectos de hover */
+  .aboutMe:hover {
+    transform: none; /* Eliminar transformación */
+    border-radius: 0; /* Eliminar borde redondeado */
+    box-shadow: none; /* Eliminar sombra */
+    transition: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+
+  .avatarSandra {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sandraImg {
+    width: 200px;
+    height: 200px;
+  }
+
+  .containerTextAboutMe {
+    width: 400px;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .secondMainText {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .secondParagraph {
+    font-size: 20px;
+  }
 }
